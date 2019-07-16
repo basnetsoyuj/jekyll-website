@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Soyuj Jung Basnet</title>
+    <description>A personal portfolio and blog-ish website.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 16 Jul 2019 23:11:00 +0545</pubDate>
+    <lastBuildDate>Tue, 16 Jul 2019 23:11:00 +0545</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>Zugzwang: An Imposed Elegance</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Introducing specific constraints on variables and functions, in mathematics, gives rise to numerous intricate patterns. This article discusses one such delicacy that arises in certain board games like chess — Zugzwang.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;“Zugzwang” is a German word that roughly translates to ‘being forced to make a move’.&lt;/p&gt;
+
+&lt;p&gt;It is pronounced as : &lt;span&gt;&lt;b&gt;/ˈzʌɡzwæŋ/&lt;/b&gt;&lt;/span&gt; .&lt;/p&gt;
+
+&lt;p&gt;The word is most often used in association with board games, notably chess. The players do not have an option of passing a move in chess, unlike other games such as Go. Thus a situation can arise during game when a certain player would prefer to pass the move, but cannot do so.&lt;/p&gt;
+
+&lt;p&gt;The first known use of the term in English was by World Chess Champion Emanuel Lasker in 1905.&lt;/p&gt;
+
+&lt;p&gt;Positions with zugzwang occur fairly often in chess endgames, especially in king and pawn endgames. Occurance of zugzwang in fairly simple board position, as shown in &lt;a href=&quot;#pos1&quot;&gt;Game 1&lt;/a&gt;, often tempts one to overlook its beauty.&lt;/p&gt;
+
+&lt;center&gt;&lt;div id=&quot;pos1&quot;&gt;
+Example of the most basic zugzwang:
+&lt;iframe allowtransparency=&quot;true&quot; border=&quot;0&quot; frameborder=&quot;0&quot; height=&quot;465&quot; width=&quot;603&quot; src=&quot;//www.chess.com/emboard?id=6206910&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/center&gt;
+
+&lt;p&gt;It is possible that the previous example has disappointed your expectations of the word. In that case, try out the following puzzle and put black in ZUGZWANG. (Beauty is more appreciated when one self-disovers it.)
+&lt;br /&gt;
+Try to look out for non-intuitive and forceful moves.&lt;/p&gt;
+&lt;center&gt;
+&lt;div id=&quot;puzzle1&quot;&gt;
+&lt;iframe allowtransparency=&quot;true&quot; border=&quot;0&quot; frameborder=&quot;0&quot; height=&quot;465&quot; width=&quot;603&quot; src=&quot;//www.chess.com/emboard?id=6206920&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Complex Zugzwang positions are very rare in professional level chess and are believed to once in a lifetime for a player.Now, let’s look at a famous game : Fritz Sämisch versus Aron Nimzowitsch, Copenhagen 1923. The game is often regarded as “The Immortal Zugzwang Game”.
+&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;iframe allowtransparency=&quot;true&quot; border=&quot;0&quot; frameborder=&quot;0&quot; height=&quot;465&quot; width=&quot;603&quot; src=&quot;//www.chess.com/emboard?id=6206922&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Here is a Zugzwang meme I couldn’t hold back.&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;/assets/images/zugzwang_meme.jpg&quot; alt=&quot;Zugzwang&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+Everyone’s favourite, &lt;i&gt;AlphaZero&lt;/i&gt; — the quintessential deep reinforcement learning agent by &lt;i&gt;Google DeepMind&lt;/i&gt;, also created a Zugzwang against the popular classical chess engine &lt;i&gt;Stockfish&lt;/i&gt;. The exact zugzwang occurs at 51. g4 !&lt;/p&gt;
+
+&lt;center&gt;
+	&lt;iframe id=&quot;game&quot; allowtransparency=&quot;true&quot; border=&quot;0&quot; frameborder=&quot;0&quot; height=&quot;465&quot; width=&quot;603&quot; src=&quot;//www.chess.com/emboard?id=6207034&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;p&gt;The following video by agadmator’s Chess Channel also covers the game move-by-move.&lt;/p&gt;
+&lt;center&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/lFXJWPhDsSY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Zugzwang is an element of art found in the game of chess. AlphaZero’s refutation to Stockfish’s style of play, and games like &lt;a href=&quot;#game&quot;&gt;these&lt;/a&gt; have rejuvenated the human-like element in the game. It proves that high-level chess doesn’t have to be boring and unaesthetic.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+At this point, your brain must be itching to solve some more Zugzwang puzzles.
+Here’s one more puzzle I leave at your disposal.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;
+	&lt;iframe allowtransparency=&quot;true&quot; border=&quot;0&quot; frameborder=&quot;0&quot; height=&quot;465&quot; width=&quot;603&quot; src=&quot;//www.chess.com/emboard?id=6207076&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+</description>
+        <pubDate>Tue, 18 Jun 2019 00:00:00 +0545</pubDate>
+        <link>http://localhost:4000/Zugzwang-An-Imposed-Elegance/</link>
+        <guid isPermaLink="true">http://localhost:4000/Zugzwang-An-Imposed-Elegance/</guid>
+        
+        
+        <category>chess</category>
+        
+        <category>zugzwang</category>
+        
+      </item>
+    
+  </channel>
+</rss>
