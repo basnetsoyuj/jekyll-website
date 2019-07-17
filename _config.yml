@@ -4,6 +4,7 @@ title: "Soyuj Jung Basnet"
 description: "A personal portfolio and blog-ish website."
 logo: 'assets/images/logo.jpg'
 favicon: 'assets/images/logo.png'
+url : https://basnetsoyuj.com.np
 baseurl: ''
 google_analytics: 'UA-143963200-1'
 disqus: 'basnetsoyuj'
