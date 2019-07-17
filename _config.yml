@@ -4,7 +4,7 @@ title: "Soyuj Jung Basnet"
 description: "A personal portfolio and blog-ish website."
 logo: 'assets/images/logo.jpg'
 favicon: 'assets/images/logo.png'
-baseurl: 
+baseurl: ''
 google_analytics: 'UA-143963200-1'
 disqus: 'basnetsoyuj'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
@@ -13,10 +13,10 @@ permalink: /:title/
 
 # Authors
 authors:
-  sal:
+  basnetsoyuj:
     name: Soyuj Jung Basnet
     display_name: basnetsoyuj
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    gravatar: 03d9ee5238f1b38e940607e0a8062a35
     email: bsoyuj@gmail.com
     web: https://www.banetsoyuj.com.np
     twitter: https://twitter.com/basnetsoyuj

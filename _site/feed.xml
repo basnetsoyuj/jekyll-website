@@ -5,8 +5,8 @@
     <description>A personal portfolio and blog-ish website.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 Jul 2019 23:11:00 +0545</pubDate>
-    <lastBuildDate>Tue, 16 Jul 2019 23:11:00 +0545</lastBuildDate>
+    <pubDate>Wed, 17 Jul 2019 08:38:25 +0545</pubDate>
+    <lastBuildDate>Wed, 17 Jul 2019 08:38:25 +0545</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -31,6 +31,8 @@ Example of the most basic zugzwang:
 &lt;/div&gt;
 &lt;/center&gt;
 
+&lt;p&gt;In this situation, white would love to skip a move and keep things as they are. Unfortunately, the rules of chess dictate that you must move, so your only option is to fall on your own sword, as every move you make worsens your position in one way or the other.&lt;/p&gt;
+
 &lt;p&gt;It is possible that the previous example has disappointed your expectations of the word. In that case, try out the following puzzle and put black in ZUGZWANG. (Beauty is more appreciated when one self-disovers it.)
 &lt;br /&gt;
 Try to look out for non-intuitive and forceful moves.&lt;/p&gt;
@@ -40,7 +42,7 @@ Try to look out for non-intuitive and forceful moves.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/center&gt;
 
-&lt;p&gt;Complex Zugzwang positions are very rare in professional level chess and are believed to once in a lifetime for a player.Now, let’s look at a famous game : Fritz Sämisch versus Aron Nimzowitsch, Copenhagen 1923. The game is often regarded as “The Immortal Zugzwang Game”.
+&lt;p&gt;Complex Zugzwang positions are very rare in professional level chess and are believed to occur once in a lifetime for a player. Now, let’s look at a famous game : Fritz Sämisch versus Aron Nimzowitsch, Copenhagen 1923. The game is often regarded as “The Immortal Zugzwang Game”.
 &lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;
 &lt;iframe allowtransparency=&quot;true&quot; border=&quot;0&quot; frameborder=&quot;0&quot; height=&quot;465&quot; width=&quot;603&quot; src=&quot;//www.chess.com/emboard?id=6206922&quot;&gt;&lt;/iframe&gt;
@@ -48,8 +50,9 @@ Try to look out for non-intuitive and forceful moves.&lt;/p&gt;
 
 &lt;p&gt;Here is a Zugzwang meme I couldn’t hold back.&lt;/p&gt;
 &lt;center&gt;&lt;img src=&quot;/assets/images/zugzwang_meme.jpg&quot; alt=&quot;Zugzwang&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-Everyone’s favourite, &lt;i&gt;AlphaZero&lt;/i&gt; — the quintessential deep reinforcement learning agent by &lt;i&gt;Google DeepMind&lt;/i&gt;, also created a Zugzwang against the popular classical chess engine &lt;i&gt;Stockfish&lt;/i&gt;. The exact zugzwang occurs at 51. g4 !&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Everyone’s favourite, &lt;i&gt;AlphaZero&lt;/i&gt; — the quintessential deep reinforcement learning agent by &lt;i&gt;Google DeepMind&lt;/i&gt;, also created a Zugzwang against the popular classical chess engine &lt;i&gt;Stockfish&lt;/i&gt;. The exact zugzwang occurs at 51. g4 !&lt;/p&gt;
 
 &lt;center&gt;
 	&lt;iframe id=&quot;game&quot; allowtransparency=&quot;true&quot; border=&quot;0&quot; frameborder=&quot;0&quot; height=&quot;465&quot; width=&quot;603&quot; src=&quot;//www.chess.com/emboard?id=6207034&quot;&gt;&lt;/iframe&gt;
@@ -69,15 +72,21 @@ Here’s one more puzzle I leave at your disposal.
 &lt;center&gt;
 	&lt;iframe allowtransparency=&quot;true&quot; border=&quot;0&quot; frameborder=&quot;0&quot; height=&quot;465&quot; width=&quot;603&quot; src=&quot;//www.chess.com/emboard?id=6207076&quot;&gt;&lt;/iframe&gt;
 &lt;/center&gt;
+
+&lt;p&gt;Make sure you zugzwang your way to victory, being devious and merciless whenever you can!&lt;/p&gt;
 </description>
         <pubDate>Tue, 18 Jun 2019 00:00:00 +0545</pubDate>
         <link>http://localhost:4000/Zugzwang-An-Imposed-Elegance/</link>
         <guid isPermaLink="true">http://localhost:4000/Zugzwang-An-Imposed-Elegance/</guid>
         
-        
         <category>chess</category>
         
         <category>zugzwang</category>
+        
+        <category>AlphaZero</category>
+        
+        
+        <category>chess</category>
         
       </item>
     

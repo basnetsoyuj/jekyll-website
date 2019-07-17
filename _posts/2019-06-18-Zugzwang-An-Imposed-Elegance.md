@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Zugzwang: An Imposed Elegance"
-categories: [ chess , zugzwang]
+categories: [ chess ]
+tags: [ chess, zugzwang, AlphaZero ]
 image: assets/images/chess.png
 featured: true
 ---
@@ -23,6 +24,8 @@ Example of the most basic zugzwang:
 </div>
 </center>
 
+In this situation, white would love to skip a move and keep things as they are. Unfortunately, the rules of chess dictate that you must move, so your only option is to fall on your own sword, as every move you make worsens your position in one way or the other.
+
 It is possible that the previous example has disappointed your expectations of the word. In that case, try out the following puzzle and put black in ZUGZWANG. (Beauty is more appreciated when one self-disovers it.)
 <br>
 Try to look out for non-intuitive and forceful moves.
@@ -32,7 +35,7 @@ Try to look out for non-intuitive and forceful moves.
 </div>
 </center>
 
-Complex Zugzwang positions are very rare in professional level chess and are believed to once in a lifetime for a player.Now, let's look at a famous game : Fritz S&auml;misch versus Aron Nimzowitsch, Copenhagen 1923. The game is often regarded as "The Immortal Zugzwang Game".
+Complex Zugzwang positions are very rare in professional level chess and are believed to occur once in a lifetime for a player. Now, let's look at a famous game : Fritz S&auml;misch versus Aron Nimzowitsch, Copenhagen 1923. The game is often regarded as "The Immortal Zugzwang Game".
 <br>
 <center>
 <iframe allowtransparency="true" border="0" frameborder="0" height="465" width="603" src="//www.chess.com/emboard?id=6206922"></iframe>
@@ -41,6 +44,7 @@ Complex Zugzwang positions are very rare in professional level chess and are bel
 Here is a Zugzwang meme I couldn't hold back.
 <center><img src="/assets/images/zugzwang_meme.jpg" alt="Zugzwang" width="500"/></center>
 <br>
+
 Everyone's favourite, <i>AlphaZero</i> &mdash; the quintessential deep reinforcement learning agent by <i>Google DeepMind</i>, also created a Zugzwang against the popular classical chess engine <i>Stockfish</i>. The exact zugzwang occurs at 51. g4 !
 
 <center>
@@ -61,3 +65,5 @@ Here's one more puzzle I leave at your disposal.
 <center>
 	<iframe allowtransparency="true" border="0" frameborder="0" height="465" width="603" src="//www.chess.com/emboard?id=6207076"></iframe>
 </center>
+
+Make sure you zugzwang your way to victory, being devious and merciless whenever you can!

@@ -22,7 +22,4 @@
 <url>
 <loc>http://localhost:4000/category/chess/</loc>
 </url>
-<url>
-<loc>http://localhost:4000/category/zugzwang/</loc>
-</url>
 </urlset>
