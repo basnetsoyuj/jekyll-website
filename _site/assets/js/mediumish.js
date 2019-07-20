@@ -110,7 +110,6 @@ jQuery(document).ready(function($){
      $(document).on('click', '.spoiler', function() {
         $(this).removeClass('spoiler');
      });
-    
  });   
 
 // deferred style loading

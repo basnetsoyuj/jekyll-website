@@ -3,12 +3,12 @@ var documents = [{
     "id": 0,
     "url": "http://localhost:4000/404.html",
     "title": "404",
-    "body": "404 Page does not exist!Please use the search bar at the top or visit the homepage! "
+    "body": "Please use the search bar at the top or visit the homepage! "
     }, {
     "id": 1,
     "url": "http://localhost:4000/about",
-    "title": "Mediumish Template for Jekyll",
-    "body": "This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.  Documentation: Please, read the docs here. Questions or bug reports?: Head over to our Github repository! Buy me a coffeeThank you for your support! Your donation helps me to maintain and improve Mediumish . Buy me a coffee Documentation"
+    "title": "About",
+    "body": ""
     }, {
     "id": 2,
     "url": "http://localhost:4000/categories",
@@ -16,14 +16,14 @@ var documents = [{
     "body": ""
     }, {
     "id": 3,
-    "url": "http://localhost:4000/contact",
+    "url": "http://localhost:4000/_pages/contact/",
     "title": "Contact | {{site.title}}",
     "body": "		sadasd"
     }, {
     "id": 4,
     "url": "http://localhost:4000/",
     "title": "Home",
-    "body": "      Featured:                                                                                                                                                                                                           Zugzwang: An Imposed Elegance                              :               Introducing specific constraints on variables and functions, in mathematics, gives rise to numerous intricate patterns. This article discusses one such delicacy that arises in certain. . . :                                                       18 Jun 2019                &lt;/span&gt;                                                                                      All Stories:                                                                                                     Zugzwang: An Imposed Elegance              :       Introducing specific constraints on variables and functions, in mathematics, gives rise to numerous intricate patterns. This article discusses one such delicacy that arises in certain board games like chess —. . . :                       18 Jun 2019        &lt;/span&gt;                            "
+    "body": "      Featured:                                                                                                                                                                                                           Zugzwang: An Imposed Elegance                              :               Introducing specific constraints on variables and functions, in mathematics, gives rise to numerous intricate patterns. This article discusses one such delicacy that arises in certain. . . :                                                       18 Jun 2019                &lt;/span&gt;                                                                                      All Stories:                                                                                                     Zugzwang: An Imposed Elegance              :       Introducing specific constraints on variables and functions, in mathematics, gives rise to numerous intricate patterns. This article discusses one such delicacy that arises in certain board games like chess —. . . :                       18 Jun 2019        &lt;/span&gt;                            			              Explore →:       				                              chess (1)                    			"
     }, {
     "id": 5,
     "url": "http://localhost:4000/robots.txt",

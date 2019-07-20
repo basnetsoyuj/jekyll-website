@@ -1,6 +1,6 @@
 ---
 title: Contact | {{site.title}}
-permalink: /contact
+permalink: 
 comments: false
 ---
 <html>
