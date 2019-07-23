@@ -91,11 +91,11 @@ post_class: post-template
 
             <!-- Post Tags -->
             <div class="after-post-tags">
-                <ul class="tags">
+                <ul class="tags-post">
                     {% assign sortedTags = page.tags | sort %}
                     {% for tag in sortedTags %}
                     <li>
-                        <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">#{{ tag }}</a>
+                        <a class="smoothscroll tag" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">{{ tag }}</a>
                     </li>
                     {% endfor %}
                 </ul>

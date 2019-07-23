@@ -28,15 +28,14 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
-<link href="/assets/css/screen.css" rel="stylesheet">
+<link href="/assets/css/screen.css" rel="stylesheet" id="CSS">
 
 <link href="/assets/css/main.css" rel="stylesheet">
 
 <script src="/assets/js/jquery.min.js"></script>
 
+
 </head>
-
-
 
 
 <body class="layout-post">
@@ -46,21 +45,20 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	</noscript>
 
-
 <!-- Begin Menu Navigation
 ================================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top mediumnavigation nav-down">
 
     <div class="container pr-0">
 
     <!-- Begin Logo -->
     <a class="navbar-brand" href="/">
-    <img src="/assets/images/logo.jpg" alt="Soyuj Jung Basnet">
+    <img src="/assets/images/logo.jpg" alt="Soyuj Jung Basnet" id="navlogo">
     </a>
     <!-- End Logo -->
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <i class="fas fa-bars"></i>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarMediumish">
@@ -72,35 +70,40 @@
                 
                 <li class="nav-item">
                 
-                <a class="nav-link" href="/index.html">BLOG</a>
+                <a class="nav-link" href="/index.html"><center>BLOG</center></a>
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link" href="/about">ABOUT</a>
+                <a class="nav-link" href="/about"><center>ABOUT</center></a>
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link" href="/contact">CONTACT</a>
+                <a class="nav-link" href="/contact"><center>CONTACT</center></a>
                 </li>
 
                 <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://github.com/basnetsoyuj"><i class="fab fa-github"></i> GitHub</a>
+                <a target="_blank" class="nav-link" href="https://github.com/basnetsoyuj"><center>GITHUB</center></a>
                 </li>
+
+                <li class="nav-item nav-link">
+                    <center><a href="" id="darkmodetoggle"><i class="fas fa-moon moon"></i></a></center>
+                </li>
+
 
                 <script src="/assets/js/lunr.js"></script>
 
 
 <style>
-    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .title {color: #fff;}
     .lunrsearchresult .url {color: silver;}
-    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a {display: block;}
     .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
     .lunrsearchresult a:hover .title {text-decoration: underline;}
 </style>
 
 
 <form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="TYPE AND ENTER"/>
 </form>
 
 <div id="lunrsearchresults">
@@ -338,19 +341,19 @@ Here’s one more puzzle I leave at your disposal.
 
             <!-- Post Tags -->
             <div class="after-post-tags">
-                <ul class="tags">
+                <ul class="tags-post">
                     
                     
                     <li>
-                        <a class="smoothscroll" href="/tags#AlphaZero">#AlphaZero</a>
+                        <a class="smoothscroll tag" href="/tags#AlphaZero">AlphaZero</a>
                     </li>
                     
                     <li>
-                        <a class="smoothscroll" href="/tags#chess">#chess</a>
+                        <a class="smoothscroll tag" href="/tags#chess">chess</a>
                     </li>
                     
                     <li>
-                        <a class="smoothscroll" href="/tags#zugzwang">#zugzwang</a>
+                        <a class="smoothscroll tag" href="/tags#zugzwang">zugzwang</a>
                     </li>
                     
                 </ul>
@@ -442,6 +445,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
 
 <!-- Scripts
 ================================================== -->
+<script src="/assets/js/darkmode.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

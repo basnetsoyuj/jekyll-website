@@ -1,5 +1,14 @@
 jQuery(document).ready(function($){
-
+    jQuery('.postcardtitle').hover(function(){     
+           jQuery('.postcardimg').addClass('is_hover');    
+       },function(){    
+          jQuery('.postcardimg').removeClass('is_hover');     
+      });
+    jQuery('.featured-box-title').hover(function(){     
+           jQuery('.featured-box-img-cover').addClass('is_hover');    
+       },function(){    
+          jQuery('.featured-box-img-cover').removeClass('is_hover');     
+      });
     //fix for stupid ie object cover
     if (document.documentMode || /Edge/.test(navigator.userAgent)) {
       jQuery('.featured-box-img-cover').each(function(){
