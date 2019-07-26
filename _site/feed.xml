@@ -5,8 +5,8 @@
     <description>A personal portfolio and blog-ish website.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Jul 2019 21:11:47 +0545</pubDate>
-    <lastBuildDate>Tue, 23 Jul 2019 21:11:47 +0545</lastBuildDate>
+    <pubDate>Fri, 26 Jul 2019 13:03:26 +0545</pubDate>
+    <lastBuildDate>Fri, 26 Jul 2019 13:03:26 +0545</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -87,6 +87,298 @@ Here’s one more puzzle I leave at your disposal.
         
         
         <category>chess</category>
+        
+      </item>
+    
+      <item>
+        <title>Manga Scraper</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;MangaScraper is python script makes manga reading faster, better and free of ads.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;MangaScraper –a simple CLI program written in python, allows you to build a list of manga and keep track of your chapter progress. It then, scrapes manga from the web, based on your manga list by checking out and downloading new chapters released that you’ve missed.&lt;/p&gt;
+
+&lt;p&gt;Link to the source code for MangaScraper : &lt;a href=&quot;https://github.com/basnetsoyuj/MangaScraper&quot;&gt;https://github.com/basnetsoyuj/MangaScraper&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To use this script:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Download the zip or clone from github:&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone https://github.com/basnetsoyuj/MangaScraper.git&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install the requirements from requirements.txt by using pip:&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;pip install -r requirements.txt&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are three basic functions:&lt;br /&gt;
+1) &lt;code class=&quot;highlighter-rouge&quot;&gt;checkout &amp;lt;manga_name&amp;gt;&lt;/code&gt;  for searching, checking out manga and building the list.&lt;br /&gt;
+2) &lt;code class=&quot;highlighter-rouge&quot;&gt;exit&lt;/code&gt;  for exiting out at any point.&lt;br /&gt;
+3) &lt;code class=&quot;highlighter-rouge&quot;&gt;refresh&lt;/code&gt;  to check if there are any updates to your selected manga lists.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;
+&lt;p&gt;To checkout and add &lt;strong&gt;One Piece&lt;/strong&gt; to manga list&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper1.PNG?raw=true&quot; alt=&quot;CLI&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;During the search, you will have to specify one of the mangas among other search results.
+If only one manga is found during the search, the program redirects to that specific one.
+Then, the program displays some recent chapters from the selected manga. You will also have to specify an index pointer to allow the program to keep record of new chapters from that point on.&lt;/p&gt;
+
+&lt;p&gt;After addition of manga to your manga list, you will be redirected to the &lt;code class=&quot;highlighter-rouge&quot;&gt;refresh &amp;lt;manga&amp;gt;&lt;/code&gt; function where you will have the option to download the chapters released after the index pointer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper1.PNG?raw=true&quot; alt=&quot;info&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The program will generate a ‘&lt;strong&gt;/data/&lt;/strong&gt;’ folder with ‘&lt;strong&gt;mangalist.csv&lt;/strong&gt;’ file containing your list and recent chapter.
+Also,a ‘&lt;strong&gt;/manga/&lt;/strong&gt;’ folder will be created that will contain all the downloaded chapter images !&lt;/p&gt;
+
+&lt;p&gt;If you encounter any error during the &lt;code class=&quot;highlighter-rouge&quot;&gt;refresh&lt;/code&gt; session, want remove a manga from the list or change the recent chapter pointer, you can directly modify the csv file and make the corrections. This allows users to dynamically alter program usage.&lt;/p&gt;
+
+&lt;p&gt;The CSV file has 3 columns (name,link and recent_chapter) and all your manga list in the rows:&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper2.PNG?raw=true&quot; alt=&quot;CSV FORMAT&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;Directories and folder structure for &lt;strong&gt;/manga/&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper3.PNG?raw=true&quot; alt=&quot;directory_info&quot; /&gt;&lt;/center&gt;
+
+&lt;center&gt;&lt;img src=&quot;https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper4.PNG?raw=true&quot; alt=&quot;directory_info&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Source code for the &lt;code class=&quot;highlighter-rouge&quot;&gt;main.py&lt;/code&gt; file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+import bs4 as bs
+import requests
+import os
+import csv
+import re
+ERR1=&quot;Sorry there was a problem ! :( Try restarting the program or check the internet connection.&quot;
+LIST_LINK=&quot;data/mangalist.csv&quot;
+TEMP_FILE=&quot;data/mangalist_temp.csv&quot;
+if not os.path.exists(&quot;data/&quot;):
+    os.makedirs(&quot;data/&quot;)
+def syntax_reminder():
+    print(&quot;Syntax :&quot;)
+    print(&quot;\t1) checkout &lt;manga_name&gt; # for searching and checking out mangas&quot;)
+    print(&quot;\t2) exit # for exiting out at any point&quot;)
+    print(&quot;\t3) refresh # to check if there are any updates to your selected manga lists&quot;)
+def add(link):
+    link1=link.replace(&quot;/manga/&quot;,&quot;/chapter/&quot;)
+    print(&quot;Enter the initial chapter pointer to keep track :&quot;)
+    looper=1
+    while looper:
+        chapter = input(&quot;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; &quot;)
+        content=bs.BeautifulSoup(requests.get(link1+&quot;/chapter_&quot;+chapter).content,'html.parser')
+        error_or_name=content.find_all('span',{'itemprop':'title'})[1].text.strip()
+        if not error_or_name==&quot;Error&quot;:
+            fieldnames = 'name,link,recent_chapter'
+            if os.path.isfile(LIST_LINK):
+                with open(LIST_LINK, 'a') as mangalist:
+                    mangalist.write(&quot;{},{},{}\n&quot;.format(error_or_name,link,chapter))
+            else:
+                with open(LIST_LINK, 'w') as mangalist:
+                    mangalist.write(fieldnames+'\n')
+                    mangalist.write(&quot;{},{},{}\n&quot;.format(error_or_name, link, chapter))
+            print(&quot;Added : {} on chapter {}&quot;.format(error_or_name,chapter))
+            looper=0
+            refresh(error_or_name)
+        else:
+            print(&quot;Error.Please try again.&quot;)
+
+def handler(item):
+    manga_link=item.find('a').get('href')
+    file_exists=os.path.isfile(LIST_LINK)
+    has_manga=0
+    if file_exists:
+        with open(LIST_LINK,'r') as mangalist:
+            list_=csv.reader(mangalist)
+            next(list_)
+            for row in list_:
+                if row[1]==manga_link:
+                    has_manga=row[0]
+                    break
+    if(has_manga):
+        print(has_manga, &quot; is already in your mangalist ! Redirecting to the refresh function&quot;)
+        refresh(has_manga)
+    else:
+        content=bs.BeautifulSoup(requests.get(manga_link).content,'html.parser')
+        print(&quot;.&quot;*60)
+        print(&quot;\t{} selected :&quot;.format(item.text.strip()))
+        ul=content.find('ul',{'class':&quot;manga-info-text&quot;})
+        status=ul.find_all('li')[2].text[9:]
+        print(&quot;This manga is&quot;,status)
+        print(&quot;.&quot;*60)
+        print(&quot;Some recent chapters are :&quot;)
+        chapter_list=content.find('div',{'class':'chapter-list'})
+        num_chapters=chapter_list.find_all('div')[:5]
+        for i in range(0,len(num_chapters)):
+            print(num_chapters[i].find('span').text)
+        print(&quot;.&quot;*60)
+        answer=''
+        while (answer.upper().strip() not in {&quot;Y&quot;, &quot;N&quot;}):
+            print(&quot;Add this manga to your list ? (Y/N):&quot;)
+            answer=input(&quot;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; &quot;)
+        if answer.upper()==&quot;Y&quot;:
+            add(manga_link)
+def checkout(name):
+    link=&quot;https://mangakakalot.com/search/&quot;+name.replace(' ','_')
+    try:
+        session = requests.get(link)
+        if session.status_code==200:
+            print(&quot;Searching .....&quot;,session.url)
+            content=bs.BeautifulSoup(session.content,'html.parser')
+            results=content.find_all('h3',{'class':'story_name'})#('span',{'class':'item-name'})
+            if results:
+                n=1
+                for result in results:
+                    print(&quot;\t{}.\t{}&quot;.format(n,result.text.strip()))
+                    n+=1
+                if n==2:
+                    handler(results.pop())
+                else:
+                    runchoice=1
+                    while(runchoice):
+                        try:
+                            print(&quot;Which one of them?(Use Symbol Number):&quot;)
+                            choice=int(input(&quot;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; &quot;))
+                            handler(results[choice-1])
+                            runchoice=0
+                        except ValueError as v:
+                            print(&quot;Enter a valid integer.&quot;)
+                        except IndexError as i:
+                            print(&quot;Enter Numbers within range.&quot;)
+            else:
+                print(&quot;No results found for :&quot;,name)
+        else:
+            print(&quot;Sorry there was a problem connecting to the website :( Try again with valid query&quot;)
+    except:
+        print(ERR1)
+
+def download_and_reset(link_ref,chapter_num_list,row):
+    answer=''
+    while(answer.upper().strip() not in {&quot;Y&quot;,&quot;N&quot;}):
+        print(f&quot;Do you want to download all these chapters and set new pointer to Chapter {chapter_num_list[0]}?&quot;)
+        answer=input(&quot;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; &quot;)
+    if answer.upper()==&quot;Y&quot;:
+        with open(TEMP_FILE, 'a') as tempfile:
+            tempfile.write(f&quot;{row[0]},{row[1]},{chapter_num_list[0]}\n&quot;)
+        for chapter in chapter_num_list:
+            print(f&quot;Downloading ....... Chapter {chapter}&quot;)
+            content=bs.BeautifulSoup(requests.get(link_ref+chapter).content,'html.parser')
+            images=content.find('div',{'class':'vung-doc'}).find_all('img')
+            links=[x.attrs['src'] for x in images]
+            counter=0
+            name=re.sub('\W+','', row[0])
+            if not os.path.exists('manga'):os.makedirs(&quot;manga&quot;)
+            if not os.path.exists(f'manga/{name}'):os.makedirs(f&quot;manga/{name}&quot;)
+            if not os.path.exists(f'manga/{name}/Chapter {chapter}'):os.makedirs(f'manga/{name}/Chapter {chapter}')
+            for link in links:
+                with open(f&quot;manga/{name}/Chapter {chapter}/{counter}.jpg&quot;,'wb') as file:
+                    file.write(requests.get(link).content)
+                counter+=1
+        print(&quot;\tDONE !&quot;)
+    else:
+        with open(TEMP_FILE, 'a') as tempfile:
+            tempfile.write(f'{row[0]},{row[1]},{row[2]}\n')
+def refresh(manga=False):
+    if not os.path.isfile(LIST_LINK):
+        print(&quot;Sorry you do not have any lists yet!.. Use [checkout &lt;manga_name&gt;] to search and create a list&quot;)
+        return 0
+    print(&quot;.&quot;*60)
+    if manga:
+        with open(TEMP_FILE,'w') as f:
+            f.write(&quot;name,link,recent_chapter\n&quot;)
+        with open(LIST_LINK, 'r') as mangalist:
+            list_ = csv.reader(mangalist)
+            next(list_)
+            for row in list_:
+                if row[0] == manga:
+                    print(f&quot;Refreshing and scraping out information for recent chapters for {manga}\n&quot;)
+                    content = bs.BeautifulSoup(requests.get(row[1]).content, 'html.parser')
+                    link_ref = row[1].replace(&quot;/manga/&quot;, &quot;/chapter/&quot;) + &quot;/chapter_&quot;
+                    chapters_list = content.find('div', {'class': 'chapter-list'}).select(f'a[href*=&quot;{link_ref}&quot;]')
+                    chapter_num_list = [x.attrs['href'][len(link_ref):] for x in chapters_list]
+                    known_index = chapter_num_list.index(row[2])
+                    if known_index == 0:
+                        print(f&quot;Other chapters for {manga} after Chapter {row[2]} haven't been released! Please checkout after sometime.&quot;)
+                        with open(TEMP_FILE, 'a') as tempfile:
+                            tempfile.write(f'{row[0]},{row[1]},{row[2]}\n')
+                    else:
+                        print(&quot;Other Chapters have been released !&quot;)
+                        for x in range(0, known_index):
+                            print(f&quot;Chapter {chapter_num_list[x]}&quot;)
+                        download_and_reset(link_ref, chapter_num_list[:known_index],row)
+                else:
+                    with open(TEMP_FILE, 'a') as tempfile:
+                        tempfile.write(f'{row[0]},{row[1]},{row[2]}\n')
+        os.remove(LIST_LINK)
+        os.renames(TEMP_FILE, LIST_LINK)
+    else:
+        with open(TEMP_FILE,'w') as f:
+            f.write(&quot;name,link,recent_chapter\n&quot;)
+        with open(LIST_LINK, 'r') as mangalist:
+            list_ = csv.reader(mangalist)
+            next(list_)
+            for row in list_:
+                print(f&quot;Refreshing and scraping out information for recent chapters for {row[0]}&quot;)
+                content = bs.BeautifulSoup(requests.get(row[1]).content, 'html.parser')
+                link_ref = row[1].replace(&quot;/manga/&quot;, &quot;/chapter/&quot;) + &quot;/chapter_&quot;
+                chapters_list = content.find('div', {'class': 'chapter-list'}).select(f'a[href*=&quot;{link_ref}&quot;]')
+                chapter_num_list = [x.attrs['href'][len(link_ref):] for x in chapters_list]
+                known_index = chapter_num_list.index(row[2])
+                if known_index == 0:
+                    print(
+                        f&quot;Other chapters for {row[0]} after Chapter {row[2]} haven't been released! Please checkout after sometime.\n&quot;)
+                    with open(TEMP_FILE, 'a') as tempfile:
+                        tempfile.write(f'{row[0]},{row[1]},{row[2]}\n')
+                else:
+                    print(&quot;Other Chapters have been released !&quot;)
+                    for x in range(0, known_index):
+                        print(f&quot;Chapter {chapter_num_list[x]}&quot;)
+                    download_and_reset(link_ref, chapter_num_list[:known_index],row)
+        os.remove(LIST_LINK)
+        os.renames(TEMP_FILE, LIST_LINK)
+if __name__==&quot;__main__&quot;:
+    print(&quot;Welcome !&quot;)
+    syntax_reminder()
+    while(1):
+        input_=input('&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; ')
+        if input_.strip()==&quot;exit&quot;:
+            break
+        elif input_.strip()==&quot;refresh&quot;:
+            refresh()
+        elif input_[:9]==&quot;checkout &quot;:
+            checkout(input_[9:].strip().lower())
+        else:
+            print(&quot;Syntax Error :(&quot;)
+            syntax_reminder()
+&amp;lt;/code&amp;gt;
+&amp;lt;/pre&amp;gt;
+&lt;script&gt;
+	if(window.location.href.includes('?darkmode')){
+		document.write('&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/railscasts.css&quot;&gt;');}
+	else{
+		document.write('&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/github.css&quot;&gt;');
+	}
+&lt;/script&gt;
+&lt;script src=&quot;/assets/js/highlight.pack.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+&lt;/manga_name&gt;&lt;/manga_name&gt;&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Tue, 13 Feb 2018 00:00:00 +0545</pubDate>
+        <link>http://localhost:4000/Manga-Scraper/</link>
+        <guid isPermaLink="true">http://localhost:4000/Manga-Scraper/</guid>
+        
+        <category>web scraping</category>
+        
+        <category>BeautifulSoup</category>
+        
+        <category>requests</category>
+        
+        
+        <category>programming</category>
+        
+        <category>python</category>
         
       </item>
     
