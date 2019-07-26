@@ -5,8 +5,8 @@
     <description>A personal portfolio and blog-ish website.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 Jul 2019 13:03:26 +0545</pubDate>
-    <lastBuildDate>Fri, 26 Jul 2019 13:03:26 +0545</lastBuildDate>
+    <pubDate>Fri, 26 Jul 2019 13:57:08 +0545</pubDate>
+    <lastBuildDate>Fri, 26 Jul 2019 13:57:08 +0545</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -146,7 +146,9 @@ Also,a ‘&lt;strong&gt;/manga/&lt;/strong&gt;’ folder will be created that wi
 
 &lt;p&gt;&lt;br /&gt;
 Source code for the &lt;code class=&quot;highlighter-rouge&quot;&gt;main.py&lt;/code&gt; file:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;
+&lt;pre&gt;
+	&lt;code class=&quot;python&quot;&gt;
+
 import bs4 as bs
 import requests
 import os
@@ -159,7 +161,7 @@ if not os.path.exists(&quot;data/&quot;):
     os.makedirs(&quot;data/&quot;)
 def syntax_reminder():
     print(&quot;Syntax :&quot;)
-    print(&quot;\t1) checkout &lt;manga_name&gt; # for searching and checking out mangas&quot;)
+    print(&quot;\t1) checkout {manga_name} # for searching and checking out mangas&quot;)
     print(&quot;\t2) exit # for exiting out at any point&quot;)
     print(&quot;\t3) refresh # to check if there are any updates to your selected manga lists&quot;)
 def add(link):
@@ -282,7 +284,7 @@ def download_and_reset(link_ref,chapter_num_list,row):
             tempfile.write(f'{row[0]},{row[1]},{row[2]}\n')
 def refresh(manga=False):
     if not os.path.isfile(LIST_LINK):
-        print(&quot;Sorry you do not have any lists yet!.. Use [checkout &lt;manga_name&gt;] to search and create a list&quot;)
+        print(&quot;Sorry you do not have any lists yet!.. Use [checkout {manga_name}] to search and create a list&quot;)
         return 0
     print(&quot;.&quot;*60)
     if manga:
@@ -352,8 +354,8 @@ if __name__==&quot;__main__&quot;:
         else:
             print(&quot;Syntax Error :(&quot;)
             syntax_reminder()
-&amp;lt;/code&amp;gt;
-&amp;lt;/pre&amp;gt;
+&lt;/code&gt;
+&lt;/pre&gt;
 &lt;script&gt;
 	if(window.location.href.includes('?darkmode')){
 		document.write('&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/railscasts.css&quot;&gt;');}
@@ -361,9 +363,11 @@ if __name__==&quot;__main__&quot;:
 		document.write('&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/github.css&quot;&gt;');
 	}
 &lt;/script&gt;
+
 &lt;script src=&quot;/assets/js/highlight.pack.js&quot;&gt;&lt;/script&gt;
+
 &lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
-&lt;/manga_name&gt;&lt;/manga_name&gt;&lt;/code&gt;&lt;/pre&gt;
+
 </description>
         <pubDate>Tue, 13 Feb 2018 00:00:00 +0545</pubDate>
         <link>http://localhost:4000/Manga-Scraper/</link>

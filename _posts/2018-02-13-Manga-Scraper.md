@@ -4,7 +4,7 @@ title:  "Manga Scraper"
 categories: [ programming, python ]
 tags: [ web scraping, BeautifulSoup, requests]
 image: assets/images/manga.jpg
-img_credit: [ Paiheme, https://dribbble.com/shots/5951087-In-the-Studio ]
+img_credit: [ "Paiheme", "https://dribbble.com/shots/5951087-In-the-Studio" ]
 featured: true
 ---
 > MangaScraper is python script makes manga reading faster, better and free of ads.
@@ -57,7 +57,9 @@ Directories and folder structure for **/manga/**:
 
 <br>
 Source code for the ```main.py``` file:
-<pre><code class="python">
+<pre>
+	<code class="python">
+
 import bs4 as bs
 import requests
 import os
@@ -70,7 +72,7 @@ if not os.path.exists("data/"):
     os.makedirs("data/")
 def syntax_reminder():
     print("Syntax :")
-    print("\t1) checkout <manga_name> # for searching and checking out mangas")
+    print("\t1) checkout {manga_name} # for searching and checking out mangas")
     print("\t2) exit # for exiting out at any point")
     print("\t3) refresh # to check if there are any updates to your selected manga lists")
 def add(link):
@@ -193,7 +195,7 @@ def download_and_reset(link_ref,chapter_num_list,row):
             tempfile.write(f'{row[0]},{row[1]},{row[2]}\n')
 def refresh(manga=False):
     if not os.path.isfile(LIST_LINK):
-        print("Sorry you do not have any lists yet!.. Use [checkout <manga_name>] to search and create a list")
+        print("Sorry you do not have any lists yet!.. Use [checkout {manga_name}] to search and create a list")
         return 0
     print("."*60)
     if manga:

@@ -4,7 +4,7 @@ title:  "Zugzwang: An Imposed Elegance"
 categories: [ chess ]
 tags: [ chess, zugzwang, AlphaZero ]
 image: assets/images/chess.png
-img_credit: [ Mohamed Chahin , https://dribbble.com/shots/5811880-Pawn-of-War-WIP ]
+img_credit: [ "Mohamed Chahin" , "https://dribbble.com/shots/5811880-Pawn-of-War-WIP" ]
 featured: true
 ---
 >Introducing specific constraints on variables and functions, in mathematics, gives rise to numerous intricate patterns. This article discusses one such delicacy that arises in certain board games like chess &mdash; Zugzwang.
