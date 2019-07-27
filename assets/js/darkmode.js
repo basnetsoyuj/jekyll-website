@@ -20,7 +20,7 @@ if (darkMode) {
 	const allLinks = document.getElementsByTagName("a");
 	for (let i = 0; i < allLinks.length; i++) {
 		if (allLinks[i].href.includes('https://www.basnetsoyuj.com.np/')
-			|| allLinks[i].href.includes('http://127.0.0.1:/')|| allLinks[i].href.includes('localhost:')) {
+			|| allLinks[i].href.includes('http://127.0.0.1:')|| allLinks[i].href.includes('localhost:')) {
 			allLinks[i].href = allLinks[i].href + '?darkmode';
 		}
 	}

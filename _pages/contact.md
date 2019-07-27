@@ -1,18 +1,18 @@
 ---
-title: Contact | {{site.title}}
-permalink: 
-comments: false
+layout: default
+title: Contact
+permalink: contact/
 ---
-<html>
-<head>
-	<style>
-#particles-js{ z-index:-5;position:fixed; top:0;left:0;width: 100%; height: 100%; background-color: #fff; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;}
-	</style>
-</head>
-<body>
-	sadasd
-<div id="particles-js"></div>
-<script src="{{ site.baseurl }}/assets/js/particles.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/app.js"></script>
-</body>
-</html>
+
+<h1>Contact</h1>
+
+Emailing me at <u><b>bsoyuj@gmail.com</b></u> is still the best way to contact me.
+
+You can also follow and contact me via:
+
+<ul style="list-style: none;" class="contact_links">
+	<li><a target="_blank" href="https://twitter.com/basnetsoyuj"><i class="fab fa-twitter"></i> Twitter</a></li>
+	<li><a target="_blank" href="https://www.instagram.com/basnetsoyuj/"><i class="fab fa-instagram"></i> Instagram</a></li>
+	<li><a target="_blank" href="https://github.com/basnetsoyuj"><i class="fab fa-github"></i> GitHub</a></li>
+	<li><a target="_blank" href="https://np.linkedin.com/in/basnetsoyuj"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+</ul>

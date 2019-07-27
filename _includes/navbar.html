@@ -32,7 +32,11 @@
                 <a class="nav-link" href="{{ site.baseurl }}/about"><center>ABOUT</center></a>
                 </li>
 
+                {% if page.url == "/contact/" %}
+                <li class="nav-item active">
+                {% else %}
                 <li class="nav-item">
+                {% endif %}
                 <a class="nav-link" href="{{ site.baseurl }}/contact"><center>CONTACT</center></a>
                 </li>
 

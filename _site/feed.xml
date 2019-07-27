@@ -5,9 +5,99 @@
     <description>A personal portfolio and blog-ish website.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 Jul 2019 13:57:08 +0545</pubDate>
-    <lastBuildDate>Fri, 26 Jul 2019 13:57:08 +0545</lastBuildDate>
+    <pubDate>Sat, 27 Jul 2019 22:30:53 +0545</pubDate>
+    <lastBuildDate>Sat, 27 Jul 2019 22:30:53 +0545</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>baghchal v_1.0.1 Release</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;baghchal is a pure Python Bagh Chal library that supports game import, move generation, move validation and board image rendering. It also comes with a simple engine based on minimax algorithm and alpha-beta pruning.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;baghchal&quot;&gt;baghchal&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://travis-ci.org/basnetsoyuj/baghchal&quot;&gt;&lt;img src=&quot;https://travis-ci.org/basnetsoyuj/baghchal.svg?branch=master&quot; alt=&quot;Build Status&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;https://baghchal.readthedocs.io/en/latest/?badge=latest&quot;&gt;&lt;img src=&quot;https://readthedocs.org/projects/baghchal/badge/?version=latest&quot; alt=&quot;Documentation Status&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://choosealicense.com/licenses/mit/&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/license-MIT-blue.svg?style=flat&quot; alt=&quot;MIT License&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;-installation&quot;&gt;&lt;i class=&quot;far fa-arrow-alt-circle-down&quot; style=&quot;font-size:0.9em&quot;&gt;&lt;/i&gt; Installation&lt;/h2&gt;
+&lt;p&gt;baghchal runs on python 3 . You can now install it directly from PyPI via pip:&lt;/p&gt;
+
+&lt;pre&gt;
+	&lt;code&gt;
+	pip install baghchal
+	&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;System requirements are &lt;a href=&quot;https://pypi.org/project/numpy/&quot;&gt;numpy&lt;/a&gt; and  &lt;a href=&quot;https://pypi.org/project/Pillow/&quot;&gt;Pillow&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;-source-code&quot;&gt;&lt;i class=&quot;fas fa-code&quot; style=&quot;font-size:0.9em&quot;&gt;&lt;/i&gt; Source Code&lt;/h2&gt;
+&lt;p&gt;The source code can be found &lt;a href=&quot;https://github.com/basnetsoyuj/baghchal&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;-download-release&quot;&gt;&lt;i class=&quot;far fa-file-archive&quot; style=&quot;font-size:0.9em&quot;&gt;&lt;/i&gt; Download Release&lt;/h2&gt;
+&lt;p&gt;In order to download and modify the code directly, you can download any one of the formats:
+&lt;a href=&quot;https://github.com/basnetsoyuj/baghchal/archive/v_1.0.1.zip&quot;&gt;baghchal-v_1.0.1.zip&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;https://github.com/basnetsoyuj/baghchal/archive/v_1.0.1.tar.gz&quot;&gt;baghchal-v_1.0.1.tar.gz&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can use only the &lt;strong&gt;[baghchal_release_version]/baghchal&lt;/strong&gt; directory and treat it as a module.&lt;/p&gt;
+
+&lt;h2 id=&quot;-documentation&quot;&gt;&lt;i class=&quot;fas fa-book&quot; style=&quot;font-size:0.9em&quot;&gt;&lt;/i&gt; Documentation&lt;/h2&gt;
+&lt;p&gt;The baghchal package has 3 sub-modules:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;baghchal.&lt;strong&gt;env&lt;/strong&gt; ( Consists of all classes and functions defining the game environment )
+    &lt;ul&gt;
+      &lt;li&gt;baghchal.env.&lt;strong&gt;Board&lt;/strong&gt; (Board class representing BaghChal board)&lt;/li&gt;
+      &lt;li&gt;baghchal.env.&lt;strong&gt;Bagh&lt;/strong&gt; (Bagh class representing Bagh Player)&lt;/li&gt;
+      &lt;li&gt;baghchal.env.&lt;strong&gt;Goat&lt;/strong&gt; (Goat class representing Goat Player)
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;baghchal.&lt;strong&gt;lookup_table&lt;/strong&gt; ( Lookup values for baghchal.env )&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;baghchal.&lt;strong&gt;engine&lt;/strong&gt; ( Simple engine based on minimax algorithm and alpha-beta pruning )
+    &lt;ul&gt;
+      &lt;li&gt;baghchal.engine.&lt;strong&gt;Engine&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;More detailed documentation for baghchal library is available &lt;a href=&quot;https://baghchal.readthedocs.io/en/latest/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;-license&quot;&gt;&lt;i class=&quot;far fa-id-badge&quot; style=&quot;font-size:0.9em&quot;&gt;&lt;/i&gt; License&lt;/h2&gt;
+&lt;p&gt;baghchal is licensed under MIT License . Check out &lt;a href=&quot;https://github.com/basnetsoyuj/baghchal/blob/master/LICENSE.txt&quot;&gt;LICENSE.txt&lt;/a&gt; for the full text.&lt;/p&gt;
+
+&lt;script&gt;
+	if(window.location.href.includes('?darkmode')){
+		document.write('&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/railscasts.css&quot;&gt;');}
+	else{
+		document.write('&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/github.css&quot;&gt;');
+	}
+&lt;/script&gt;
+
+&lt;script src=&quot;/assets/js/highlight.pack.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+
+</description>
+        <pubDate>Sat, 27 Jul 2019 00:00:00 +0545</pubDate>
+        <link>http://localhost:4000/baghchal-v_1.0.1-Release/</link>
+        <guid isPermaLink="true">http://localhost:4000/baghchal-v_1.0.1-Release/</guid>
+        
+        <category>baghchal</category>
+        
+        <category>game environment</category>
+        
+        <category>board game</category>
+        
+        
+        <category>programming</category>
+        
+        <category>python</category>
+        
+        <category>baghchal</category>
+        
+      </item>
     
       <item>
         <title>Zugzwang: An Imposed Elegance</title>
@@ -98,7 +188,7 @@ Here’s one more puzzle I leave at your disposal.
 
 &lt;p&gt;MangaScraper –a simple CLI program written in python, allows you to build a list of manga and keep track of your chapter progress. It then, scrapes manga from the web, based on your manga list by checking out and downloading new chapters released that you’ve missed.&lt;/p&gt;
 
-&lt;p&gt;Link to the source code for MangaScraper : &lt;a href=&quot;https://github.com/basnetsoyuj/MangaScraper&quot;&gt;https://github.com/basnetsoyuj/MangaScraper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Link to the source code for MangaScraper : &lt;a href=&quot;https://github.com/basnetsoyuj/MangaScraper&quot;&gt;MangaScraper&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;To use this script:&lt;/p&gt;
 &lt;ul&gt;
@@ -118,9 +208,9 @@ Here’s one more puzzle I leave at your disposal.
 3) &lt;code class=&quot;highlighter-rouge&quot;&gt;refresh&lt;/code&gt;  to check if there are any updates to your selected manga lists.&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;
-&lt;p&gt;To checkout and add &lt;strong&gt;One Piece&lt;/strong&gt; to manga list&lt;/p&gt;
+&lt;p&gt;To checkout and add &lt;strong&gt;One Piece&lt;/strong&gt; to manga list:&lt;/p&gt;
 
-&lt;center&gt;&lt;img src=&quot;https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper1.PNG?raw=true&quot; alt=&quot;CLI&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src=&quot;https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper.PNG?raw=true&quot; alt=&quot;CLI&quot; /&gt;&lt;/center&gt;
 
 &lt;p&gt;During the search, you will have to specify one of the mangas among other search results.
 If only one manga is found during the search, the program redirects to that specific one.
@@ -128,7 +218,7 @@ Then, the program displays some recent chapters from the selected manga. You wil
 
 &lt;p&gt;After addition of manga to your manga list, you will be redirected to the &lt;code class=&quot;highlighter-rouge&quot;&gt;refresh &amp;lt;manga&amp;gt;&lt;/code&gt; function where you will have the option to download the chapters released after the index pointer.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper1.PNG?raw=true&quot; alt=&quot;info&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper1.PNG?raw=true&quot; alt=&quot;info&quot; /&gt;&lt;/center&gt;
 
 &lt;p&gt;The program will generate a ‘&lt;strong&gt;/data/&lt;/strong&gt;’ folder with ‘&lt;strong&gt;mangalist.csv&lt;/strong&gt;’ file containing your list and recent chapter.
 Also,a ‘&lt;strong&gt;/manga/&lt;/strong&gt;’ folder will be created that will contain all the downloaded chapter images !&lt;/p&gt;
@@ -141,7 +231,7 @@ Also,a ‘&lt;strong&gt;/manga/&lt;/strong&gt;’ folder will be created that wi
 &lt;p&gt;Directories and folder structure for &lt;strong&gt;/manga/&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;center&gt;&lt;img src=&quot;https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper3.PNG?raw=true&quot; alt=&quot;directory_info&quot; /&gt;&lt;/center&gt;
-
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;center&gt;&lt;img src=&quot;https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper4.PNG?raw=true&quot; alt=&quot;directory_info&quot; /&gt;&lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;

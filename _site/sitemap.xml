@@ -9,13 +9,17 @@
 <lastmod>2019-06-18T00:00:00+05:45</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/baghchal-v_1.0.1-Release/</loc>
+<lastmod>2019-07-27T00:00:00+05:45</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about</loc>
 </url>
 <url>
 <loc>http://localhost:4000/categories</loc>
 </url>
 <url>
-<loc>http://localhost:4000/_pages/contact/</loc>
+<loc>http://localhost:4000/contact/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
@@ -31,5 +35,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/category/chess/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/baghchal/</loc>
 </url>
 </urlset>

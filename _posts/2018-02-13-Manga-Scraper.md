@@ -5,13 +5,12 @@ categories: [ programming, python ]
 tags: [ web scraping, BeautifulSoup, requests]
 image: assets/images/manga.jpg
 img_credit: [ "Paiheme", "https://dribbble.com/shots/5951087-In-the-Studio" ]
-featured: true
 ---
 > MangaScraper is python script makes manga reading faster, better and free of ads.
 
 MangaScraper --a simple CLI program written in python, allows you to build a list of manga and keep track of your chapter progress. It then, scrapes manga from the web, based on your manga list by checking out and downloading new chapters released that you've missed.
 
-Link to the source code for MangaScraper : <a href="https://github.com/basnetsoyuj/MangaScraper">https://github.com/basnetsoyuj/MangaScraper</a>
+Link to the source code for MangaScraper : <a href="https://github.com/basnetsoyuj/MangaScraper">MangaScraper</a>
 
 To use this script:
 * Download the zip or clone from github:<br>
@@ -26,9 +25,9 @@ There are three basic functions:<br>
 3) ```refresh``` &nbsp;to check if there are any updates to your selected manga lists.<br>
 
 ## Example
-To checkout and add **One Piece** to manga list
+To checkout and add **One Piece** to manga list:
 
-<center><img src="https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper1.PNG?raw=true" alt="CLI"/></center>
+<center><img src="https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper.PNG?raw=true" alt="CLI"/></center>
 
 
 During the search, you will have to specify one of the mangas among other search results.
@@ -37,7 +36,7 @@ Then, the program displays some recent chapters from the selected manga. You wil
 
 After addition of manga to your manga list, you will be redirected to the ```refresh <manga>``` function where you will have the option to download the chapters released after the index pointer.
 
-![info](https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper1.PNG?raw=true)
+<center><img src="https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper1.PNG?raw=true" alt="info"/></center>
 
 The program will generate a '**/data/**' folder with '**mangalist.csv**' file containing your list and recent chapter.
 Also,a '**/manga/**' folder will be created that will contain all the downloaded chapter images !
@@ -51,7 +50,7 @@ The CSV file has 3 columns (name,link and recent_chapter) and all your manga lis
 Directories and folder structure for **/manga/**:
 
 <center><img src="https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper3.PNG?raw=true" alt="directory_info"/></center>
-
+<br/>
 <center><img src="https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper4.PNG?raw=true" alt="directory_info"/></center>
 
 

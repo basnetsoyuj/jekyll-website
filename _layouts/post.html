@@ -33,19 +33,19 @@ post_class: post-template
 
             <!-- Post Featured Image -->
             {% if page.image %}
-            <figure>
+            <figure><center>
             {% if site.lazyimages == "enabled" %}
             <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
             {% else %}
             <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
 
             {% if page.img_credit %}
-                <center><figcaption>Illustrations by <a target="blank" href="{{page.img_credit[1]}}-">{{page.img_credit[0]}}</a></figcaption></center>
+                <figcaption>Illustrations by <a target="blank" href="{{page.img_credit[1]}}-">{{page.img_credit[0]}}</a></figcaption>
             {%endif %}
 
             {% endif %}
 
-            </figure>
+            </center></figure>
             {% endif %}
             <!-- End Featured Image -->
 
@@ -85,6 +85,7 @@ post_class: post-template
             <!-- Post Categories -->
             <div class="after-post-cats">
                 <ul class="tags mb-4">
+                    <i class="fa fa-tag"></i>
                     {% assign sortedCategories = page.categories | sort %}
                     {% for category in sortedCategories %}
                     <li>
@@ -97,11 +98,12 @@ post_class: post-template
 
             <!-- Post Tags -->
             <div class="after-post-tags">
-                <ul class="tags-post">
+                <ul class="tags tags-post">
+                    <i class="fa fa-hashtag"></i>
                     {% assign sortedTags = page.tags | sort %}
                     {% for tag in sortedTags %}
                     <li>
-                        <a class="smoothscroll tag" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">{{ tag }}</a>
+                        <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}"> {{ tag }} </a>
                     </li>
                     {% endfor %}
                 </ul>

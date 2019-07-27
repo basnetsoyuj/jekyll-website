@@ -77,7 +77,9 @@
                 <a class="nav-link" href="/about"><center>ABOUT</center></a>
                 </li>
 
+                
                 <li class="nav-item">
+                
                 <a class="nav-link" href="/contact"><center>CONTACT</center></a>
                 </li>
 
@@ -236,17 +238,17 @@
 
             <!-- Post Featured Image -->
             
-            <figure>
+            <figure><center>
             
             <img class="featured-image img-fluid" src="/assets/images/manga.jpg" alt="Manga Scraper">
 
             
-                <center><figcaption>Illustrations by <a target="blank" href="https://dribbble.com/shots/5951087-In-the-Studio-">Paiheme</a></figcaption></center>
+                <figcaption>Illustrations by <a target="blank" href="https://dribbble.com/shots/5951087-In-the-Studio-">Paiheme</a></figcaption>
             
 
             
 
-            </figure>
+            </center></figure>
             
             <!-- End Featured Image -->
 
@@ -261,7 +263,7 @@
 
 <p>MangaScraper –a simple CLI program written in python, allows you to build a list of manga and keep track of your chapter progress. It then, scrapes manga from the web, based on your manga list by checking out and downloading new chapters released that you’ve missed.</p>
 
-<p>Link to the source code for MangaScraper : <a href="https://github.com/basnetsoyuj/MangaScraper">https://github.com/basnetsoyuj/MangaScraper</a></p>
+<p>Link to the source code for MangaScraper : <a href="https://github.com/basnetsoyuj/MangaScraper">MangaScraper</a></p>
 
 <p>To use this script:</p>
 <ul>
@@ -281,9 +283,9 @@
 3) <code class="highlighter-rouge">refresh</code>  to check if there are any updates to your selected manga lists.<br /></p>
 
 <h2 id="example">Example</h2>
-<p>To checkout and add <strong>One Piece</strong> to manga list</p>
+<p>To checkout and add <strong>One Piece</strong> to manga list:</p>
 
-<center><img src="https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper1.PNG?raw=true" alt="CLI" /></center>
+<center><img src="https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper.PNG?raw=true" alt="CLI" /></center>
 
 <p>During the search, you will have to specify one of the mangas among other search results.
 If only one manga is found during the search, the program redirects to that specific one.
@@ -291,7 +293,7 @@ Then, the program displays some recent chapters from the selected manga. You wil
 
 <p>After addition of manga to your manga list, you will be redirected to the <code class="highlighter-rouge">refresh &lt;manga&gt;</code> function where you will have the option to download the chapters released after the index pointer.</p>
 
-<p><img src="https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper1.PNG?raw=true" alt="info" /></p>
+<center><img src="https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper1.PNG?raw=true" alt="info" /></center>
 
 <p>The program will generate a ‘<strong>/data/</strong>’ folder with ‘<strong>mangalist.csv</strong>’ file containing your list and recent chapter.
 Also,a ‘<strong>/manga/</strong>’ folder will be created that will contain all the downloaded chapter images !</p>
@@ -304,7 +306,7 @@ Also,a ‘<strong>/manga/</strong>’ folder will be created that will contain a
 <p>Directories and folder structure for <strong>/manga/</strong>:</p>
 
 <center><img src="https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper3.PNG?raw=true" alt="directory_info" /></center>
-
+<p><br /></p>
 <center><img src="https://github.com/basnetsoyuj/MangaScraper/blob/master/images/MangaScraper4.PNG?raw=true" alt="directory_info" /></center>
 
 <p><br />
@@ -548,6 +550,7 @@ if __name__=="__main__":
             <!-- Post Categories -->
             <div class="after-post-cats">
                 <ul class="tags mb-4">
+                    <i class="fa fa-tag"></i>
                     
                     
                     <li>
@@ -564,19 +567,20 @@ if __name__=="__main__":
 
             <!-- Post Tags -->
             <div class="after-post-tags">
-                <ul class="tags-post">
+                <ul class="tags tags-post">
+                    <i class="fa fa-hashtag"></i>
                     
                     
                     <li>
-                        <a class="smoothscroll tag" href="/tags#BeautifulSoup">BeautifulSoup</a>
+                        <a class="smoothscroll" href="/tags#BeautifulSoup"> BeautifulSoup </a>
                     </li>
                     
                     <li>
-                        <a class="smoothscroll tag" href="/tags#requests">requests</a>
+                        <a class="smoothscroll" href="/tags#requests"> requests </a>
                     </li>
                     
                     <li>
-                        <a class="smoothscroll tag" href="/tags#web-scraping">web scraping</a>
+                        <a class="smoothscroll" href="/tags#web-scraping"> web scraping </a>
                     </li>
                     
                 </ul>
