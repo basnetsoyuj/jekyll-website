@@ -500,6 +500,8 @@ ul.tags {
 ul.tags li {
     display: inline-block;
     font-size: 0.9rem;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 ul.tags li a {
