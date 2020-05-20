@@ -7,11 +7,9 @@ image: assets/images/chess.png
 img_credit: [ "Mohamed Chahin" , "https://dribbble.com/shots/5811880-Pawn-of-War-WIP" ]
 featured: true
 ---
->Introducing specific constraints on variables and functions, in mathematics, gives rise to numerous intricate patterns. This article discusses one such delicacy that arises in certain board games like chess &mdash; Zugzwang.
+>Introducing specific constraints on variables and functions in mathematics gives rise to numerous intricate patterns. This article discusses one such delicacy that arises in certain board games like chess &mdash; Zugzwang.
 
-"Zugzwang" is a German word that roughly translates to 'being forced to make a move'.
-
-It is pronounced as : <span><b>/&#712;z&#652;&#609;zw&aelig;&#331;/</b></span> .
+Zugzwang (<var><b>/&#712;z&#652;&#609;zw&aelig;&#331;/</b></var>) is a German word that roughly translates to 'being forced to make a move'.
 
 The word is most often used in association with board games, notably chess. The players do not have an option of passing a move in chess, unlike other games such as Go. Thus a situation can arise during game when a certain player would prefer to pass the move, but cannot do so.
 

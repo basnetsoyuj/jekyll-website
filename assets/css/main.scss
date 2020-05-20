@@ -2,6 +2,19 @@
 # Add a comment to make this file sass-y.
 # Change this file for any custom CSS.
 ---
+@font-face {
+	font-family: 'Noe Display';
+	src: url('../fonts/noe-display-bold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+@font-face {
+    font-family: 'euclid_circular_a';
+    src: url('../fonts/EuclidCircularA-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 /* We need to add display:inline in order to align the '>>' of the 'read more' link */
 .post-excerpt p {
@@ -13,3 +26,19 @@
 	"syntax",
     "starsnonscss"
 ;
+figure{
+	border: 1px solid #d3dce6;
+    border-radius: 4px;
+    overflow: hidden;
+	text-align: center;
+}
+
+samp {
+	border: 1px solid #d3dce6;
+	background-color: #f5f5f5;
+	padding: 0 8px;
+	border-radius: 4px;
+  }
+blockquote{
+	font-family:Merriweather, euclid_circular_a;
+}
