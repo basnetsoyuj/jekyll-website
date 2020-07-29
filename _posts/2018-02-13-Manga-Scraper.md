@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Manga Scraper"
-categories: [ programming, python ]
+categories: [ python ]
 tags: [ web scraping, BeautifulSoup, requests]
 image: assets/images/manga.jpg
 img_credit: [ "Paiheme", "https://dribbble.com/shots/5951087-In-the-Studio" ]
