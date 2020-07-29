@@ -30,7 +30,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
-    
+
 # Archives
 jekyll-archives:
   enabled:
@@ -38,7 +38,19 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
-    
+
+defaults:
+  -
+    scope:
+      path: '_pages/categories.md'
+    values:
+      sitemap: false
+  -
+    scope:
+      path: '_pages/tags.md'
+    values:
+      sitemap: false
+
 # Pagination 
 paginate: 6
 paginate_path: /page:num/
